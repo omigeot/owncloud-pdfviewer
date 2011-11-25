@@ -1,0 +1,9 @@
+This is a very basic PDF viewer for Owncloud. It's heavily based on Mozilla's PDF.js.
+
+In its current form, it just opens PDF.js default viewer on a new page/tab when a PDF is clicked.
+
+To install, just unzip/pull the whole thing into /owncloud/apps/files_pdfviewer/ and that should be it. Oh, yeah, you might have to enable it in Owncloud's admin page.
+
+Regarding License issues, since it's mostly PDF.js, I'd stick to their license (MPL) for now. If grown interesting enough, my own parts would probably become AGPL.
+
+For now, the most important (!) change is just converting the file URL to Base64 and back when passing to viewer.html. Escaping woes...
